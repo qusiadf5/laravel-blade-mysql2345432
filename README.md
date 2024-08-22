@@ -11,6 +11,8 @@ tags:
 
 This is a [Laravel](https://laravel.com/) blade starter app that is connected to a Railway MySQL database.
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/JL9ADu?referralCode=2Sbs5r)
+
 ## ✨ Features
 
 - PHP
