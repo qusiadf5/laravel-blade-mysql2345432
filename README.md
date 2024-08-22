@@ -1,3 +1,30 @@
+---
+title: Laravel Blade MySQL Starter
+description: A Laravel blade app connected to a Railway MySQL database.
+tags:
+  - php
+  - laravel + blade
+  - mysql
+---
+
+# Laravel Starter Example
+
+This is a [Laravel](https://laravel.com/) blade starter app that is connected to a Railway MySQL database.
+
+## ✨ Features
+
+- PHP
+- Laravel
+- Postgres
+
+## 📝 Notes
+
+- **Env**: Envs are standard except DB URL that is configured in Railway not in env file.
+- **Web server port**: App runs in port 8080.
+- **Logging**: Logs are being sent to stdout and can be accessed via `railway logs`.
+- **Migrations**: Migrations are run on deploy, remember to remove on production.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
