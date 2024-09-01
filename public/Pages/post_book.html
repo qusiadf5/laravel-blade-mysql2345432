@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ather | نشر كتاب</title>
+    <link rel="icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="right">
+            <div class="logo"><img src="../assets/img/logo.png" alt="logo"></div>
+            <div class="box_search">
+                <input class="search_input" id="search_input" type="text" placeholder="Search ...">
+                <ion-icon id="opne_search" name="search"></ion-icon>
+                <ion-icon id="close_search" name="close"></ion-icon>
+            </div>
+        </div>
+    
+        <div class="left">
+            <div class="nav" id="nav">
+                <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                <li><a href="library.html">المكتبة</a></li>
+                <li><a href="post.html">مقالات</a></li>
+                <li><a href="#">ردود على المخالفين</a></li>
+                <li><a href="about.html">من نحن</a></li>
+    
+                <!--  -->
+                <!-- Show Not if not login person -->
+                <a href="../Backend/login.html" class="div login">تسجيل الدخول</a>
+    
+                <!--  -->
+                <!-- Show Profile if login person -->
+                <a href="profile.html" class="div account">
+                    <div class="cover"><img
+                            src="../assets/img/profile.jpg">
+                    </div>
+                    <h3 class="name">حسـابى</h3>
+                </a>
+    
+                <!--  -->
+                <!-- Show Dashboard if Owner login -->
+                <a href="../Backend/dashboard.html" class="div dashboard">لوحة التحكم</a>
+            </div>
+    
+            <div class="action">
+                <!-- Show Notifications if login person -->
+                <div onclick="notifications()" class="div notifications" id="notifications">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+                <div class="dropdown_notifications" id="dropdown_notifications">
+                    <div>تم الموافقه على نشر كتابك</div>
+                    <div>تم نشر كتاب جديد على</div>
+                </div>
+    
+                <!--  -->
+                <div class="icon_side">
+                    <ion-icon id="menu" name="menu"></ion-icon>
+                    <ion-icon id="close" name="close"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contaner_post_book">
+        <h2 class="title_post">" نشر كتاب "</h2>
+        <form>
+            <!-- انشاء كارد خارجى-->
+            <span class="title_sec">غلاف الكتاب</span>
+            <div class="cover"><input type="file" required></div>
+            <input type="text" required placeholder="اسم الكتاب">
+            <select name="divide" id="divide">
+                <option selected>اختار تصنيف الكتاب</option>
+                <option value="1"> التوحيد</option>
+                <option value="2"> احاديث</option>
+                <option value="3"> ردود</option>
+            </select>
+            <input type="text" required placeholder="المؤلف">
+            <select name="divide" id="divide">
+                <option selected>اختار قسم الكتاب</option>
+                <option value="1"> دينى</option>
+                <option value="2"> علمى</option>
+                <option value="3"> تاريخى</option>
+            </select>
+            <select name="lang" id="lang">
+                <option selected>اختار لغة الكتاب</option>
+                <option value="1"> العربية</option>
+                <option value="2"> الانجليزية</option>
+            </select>
+            <input type="number" required placeholder="عدد الصفحات">
+            <input type="number" required placeholder="حجم الملف">
+            <select name="type_file" id="type_file">
+                <option selected>اختار نوع الملف</option>
+                <option value="1"> PDF</option>
+                <option value="2"> JPG</option>
+                <option value="3"> PNG</option>
+            </select>
+            <input type="date" required>
+            <textarea required placeholder="وصف الكتاب ..."></textarea>
+            <button type="submit">نشر الكتاب</button>
+        </form>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Copyright © <span>Mohamed Mahmoud and اثر</span></p>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

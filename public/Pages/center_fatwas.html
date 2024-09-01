@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ather | التعرف بى مركز الفتاوى</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/img/logo.png">
+</head>
+
+<body>
+    <div class="header">
+        @include('navbar') <!-- إدراج الشريط العلوي الموحد -->
+    </div>
+            <div class="action">
+                <!-- Show Notifications if login person -->
+                <div onclick="notifications()" class="div notifications" id="notifications">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+                <div class="dropdown_notifications" id="dropdown_notifications">
+                    <div>تم الموافقه على نشر كتابك</div>
+                    <div>تم نشر كتاب جديد على</div>
+                </div>
+
+                <!--  -->
+                <div class="icon_side">
+                    <ion-icon id="menu" name="menu"></ion-icon>
+                    <ion-icon id="close" name="close"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contaner_center_fatwas">
+        <div class="side_hashtag" style="width: 20rem;">
+            <div class="head"><label for="#"><ion-icon name="search"></ion-icon></label> <span>اقسام الكتب</span></div>
+            <a href="#">الروايات والقصص الأدبية <ion-icon name="book"></ion-icon></a>
+            <a href="#">التنمية البشرية وتطوير الذات <ion-icon name="book"></ion-icon></a>
+            <a href="#">الديانة الإسلامية <ion-icon name="book"></ion-icon></a>
+            <a href="#">التاريخ <ion-icon name="book"></ion-icon></a>
+            <a href="#">الفقه الإسلامي <ion-icon name="book"></ion-icon></a>
+            <a href="#">الأدب <ion-icon name="book"></ion-icon></a>
+            <a href="#">تفسير القرآن الكريم <ion-icon name="book"></ion-icon></a>
+            <a href="#">العقيدة الإسلامية <ion-icon name="book"></ion-icon></a>
+            <a href="#">الثقافة <ion-icon name="book"></ion-icon></a>
+        </div>
+
+        <div class="box_center_fatwas">
+            <h3>التعريف بمركز الفتوى</h3>
+            <h4>التعريف:</h4>
+            <p>هو بـوابة علمية دعـويـة كبـيـرة، ضمن بوابات موقع الشبـكة الإسلامية "اثر " ، التـابع لإدارة الدعوة
+                والإرشـاد الديني
+                بـوزارة الأوقاف والشــؤون الإسلامية بدولة قطر.
+            </p>
+
+            <h3>اختصاصاته: (مجال الاختصاص)
+            </h3>
+            <p>يعنى مركز الفتوى بالإجابة على الأسئلة المتعلقة بعقيدة المسلم ، وعبادته ، ومعاملاته ، وأخلاقه ، وسلوكه ،
+                وغير ذلك مما
+                يعرض له في حياته ، مما يحتاج إلى معرفة الحكم الشرعي فيه.
+            </p>
+            <h3>فريق العمل: (القائمون عليه)</h3>
+            <p>يقوم على العمل في المركز ، فريق من طلبة العلم الشرعي المتميزين والمتمرسين في هذا المجال، فمنهم الباحث
+                والمحرر، ومنهم
+                المراجع، ومنهم المدقق والمصحح، ومنهم الناشر، ويتولى الإشراف على هذا الفريق من الناحية الشرعية أحد
+                أفراده.</p>
+            <h3>منهجية الفتوى في مركز الفتوى بـ :اثر</h3>
+            <p>لا تختلف المنهجية المتبعة في المركز، عما قرره أهل العلم من ضوابط الفتوى المعروفة عندهم، والمتمثلة في
+                الاعتماد على الأدلة
+                الشرعية "الكتاب والسنة والإجماع والقياس"، وإن كان ثمة اختلاف بين أهل العلم فإننا نتحرى القول الأقوى
+                دليلاً، وما عليه
+                المحققون من أهل العلم في المسألة بحسب علمنا، ولسنا بالخيار أن نأخذ ما نشاء ونترك ما نشاء، وقد قال الإمام
+                النووي رحمه
+                الله: "ليس للمفتي والعامل في مسألة فيها قولان أو أكثر أن يعمل بما شاء منها بغير نظر، بل عليه العمل
+                بأرجحها". اهـ. ولا
+                نتتبع رخص المذاهب وسقطات العلماء، حيث عد بعض أهل العلم - منهم أبو إسحاق المروزي و ابن القيم - من يفعل
+                ذلك فاسقاً، وقد
+                خطأ العلماء من يسلك هذا الطريق، وهو تتبع الرخص والسقطات، لأن الراجح في نظر المفتي هو مظنة حكم الله تعالى
+                عنده، ولولا ذلك
+                لم يكن راجحا، فتركه والأخذ بغيره لمجرد اليسر والسهولة استهانة بالدين. إضافة لما سبق فإننا نبذل الوسع في
+                مراعاتنا لسلامة
+                الاستدلال ومقاصد الشرع، وملابسات الواقع وتغير الحال، ونختم ذلك كله بذكر الرأي الذي يترجح لدينا، بما لا
+                يخرج عن أقوال
+                الأئمة المعتبرين.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Copyright © <span>Mohamed Mahmoud and اثر</span></p>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

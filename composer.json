@@ -6,17 +6,29 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "doctrine/dbal": "^3.9",
+        "laravel/fortify": "*",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/jetstream": "^5.1",
+        "laravel/sanctum": "^4.0",
+        "laravel/socialite": "^5.15",
+        "laravel/tinker": "^2.9",
+        "livewire/livewire": "^3.0",
+        "open-admin-ext/config": "^1.0",
+        "open-admin-ext/helpers": "^1.0",
+        "open-admin-ext/log-viewer": "^1.0",
+        "open-admin-ext/media-manager": "^1.0",
+        "open-admin-org/open-admin": "^1.0",
+        "socialiteproviders/discord": "^4.2",
+        "spatie/laravel-permission": "^6.9"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.0",
-        "pestphp/pest": "^2.35",
-        "pestphp/pest-plugin-laravel": "^2.4"
+        "nunomaduro/collision": "^8.4",
+        "phpunit/phpunit": "^11.0.1"
     },
     "autoload": {
         "psr-4": {

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ather | تسجيل الدخول</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="form login" id="form_login">
+            <div class="img_login_signin">
+                <img src="../assets/img/img_login_signin.png" alt="">
+            </div>
+
+            <form action="">
+                <img class="logo" src="../assets/img/logo.png" alt="">
+                <span class="title_page">تسجيل الدخول</span>
+                <input id="email" type="email" name="email" id="email" required placeholder="البريد الالكترونى">
+                <input id="password" type="password" name="password" id="password" required placeholder="كلمة السر">
+                <button onclick="login()" class="btn_login" id="btn_login" type="submit">تسجيل الدخول</button>
+                <button onclick="signin()" class="btn_signin" id="btn_signin" type="submit">الاشتراك</button>
+                <div class="login_other">
+                    <div>
+                        <span></span>
+                        <h2>او</h2>
+                        <span></span>
+                    </div>
+                    <a href="auth/google/"><img src="../assets/img/icon_google.png"> جوجل</a>
+                    <a href="#"><img src="../assets/img/icon_discord.png" alt=""> ديسكورد</a>
+                </div>
+                <div class="back_home"><a href="../index.html">الرجوع للصفحه الرئيسية</a></div>
+            </form>
+        </div>
+
+        <div class="form signin" id="form_signin">
+            <div class="img_login_signin">
+                <img src="../assets/img/img_login_signin.png" alt="">
+            </div>
+            <form action="">
+                <img class="logo" src="../assets/img/logo.png" alt="">
+                <span class="title_page">الاشتراك</span>
+                <input type="text" name="name" id="name" required placeholder="الاسم بلكامل">
+                <input type="email" name="email" id="email" required placeholder="البريد الالكترونى">
+                <input type="password" name="password" id="password" required placeholder="كلمة السر">
+                <button onclick="signin()" class="btn_signin" id="btn_signin" type="submit">الاشتراك</button>
+                <button onclick="login()" class="btn_login" id="btn_login" type="submit">تسجيل الدخول</button>
+                <div class="login_other">
+                    <div>
+                        <span></span>
+                        <h2>او</h2>
+                        <span></span>
+                    </div>
+                    <a href="auth/google"><img src="../assets/img/icon_google.png"> تسجيل</a>
+                    <a href="auth/discord"><img src="../assets/img/icon_discord.png" alt=""> ديسكورد</a>
+                </div>
+                <div class="back_home"><a href="../index.html">الرجوع للصفحه الرئيسية</a></div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        let btn_signin = document.getElementById("btn_signin");
+        let btn_login = document.getElementById("btn_login");
+        let form_login = document.getElementById("form_login");
+        let form_signin = document.getElementById("form_signin");
+
+        function signin() {
+            form_login.style.display = "none";
+            form_signin.style.display = "flex";
+        }
+        function login() {
+            form_login.style.display = "flex";
+            form_signin.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

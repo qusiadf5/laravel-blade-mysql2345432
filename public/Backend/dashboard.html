@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | لوحة التحكم</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/img/logo.png">
+</head>
+
+<body>
+
+
+    <!-- contaner -->
+    <input type="checkbox" style="display: none;" id="menu">
+    <div class="contaner_dashboard">
+
+        <div class="RightSide" id="RightSide">
+            <span>لوحة التحكم</span>
+            <ul>
+                <a onclick="book()" id="btn_upload_book" href="#" class="btn active_link">نشر كتاب</a>
+                <a onclick="post()" id="btn_upload_post" href="#" class="btn">نشر مقالة</a>
+                <a onclick="video()" id="btn_upload_video" href="#" class="btn">نشر فديو</a>
+                <a onclick="fatwas()" id="btn_upload_fatwas" href="#" class="btn">نشر فتاوى</a>
+                <a onclick="users()" id="btn_users" href="#" class="btn">المستخدمين</a>
+            </ul>
+        </div>
+
+        <div class="LeftContact">
+
+            <div class="header">
+                <div class="user">
+                    <a class="log-out" href="login.html"><ion-icon name="log-out-outline"></ion-icon></a>
+                    <a class="home" href="../index.html"><ion-icon name="home"></ion-icon></a>
+                    <div class="cover">
+                        <img src="../assets/img/profile.jpg">
+                    </div>
+                    <h2 class="name_user">محمود </h2>
+                </div>
+                <div class="menu_side">
+                    <label for="menu"><ion-icon name="menu"></ion-icon></label>
+                </div>
+            </div>
+
+            <div class="sec" id="sec_upload_book">
+                <form>
+                    <span class="title_sec">غلاف الكتاب</span>
+                    <input class="cover" type="file" required>
+                    <input type="text" required placeholder="اسم الكتاب">
+                    <select name="divide" id="divide">
+                        <option selected>اختار تصنيف الكتاب</option>
+                        <option value="1"> التوحيد</option>
+                        <option value="2"> احاديث</option>
+                        <option value="3"> ردود</option>
+                    </select>
+                    <input type="text" required placeholder="المؤلف">
+                    <select name="divide" id="divide">
+                        <option selected>اختار قسم الكتاب</option>
+                        <option value="1"> دينى</option>
+                        <option value="2"> علمى</option>
+                        <option value="3"> تاريخى</option>
+                    </select>
+                    <select name="lang" id="lang">
+                        <option selected>اختار لغة الكتاب</option>
+                        <option value="1"> العربية</option>
+                        <option value="2"> الانجليزية</option>
+                    </select>
+                    <input type="number" required placeholder="عدد الصفحات">
+                    <input type="number" required placeholder="حجم الملف">
+                    <select name="type_file" id="type_file">
+                        <option selected>اختار نوع الملف</option>
+                        <option value="1"> PDF</option>
+                        <option value="2"> JPG</option>
+                        <option value="3"> PNG</option>
+                    </select>
+                    <input type="date" required>
+                    <textarea required placeholder="وصف الكتاب ..."></textarea>
+                    <button type="submit">نشر الكتاب</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم الكتاب</th>
+                            <th>الاعدادات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>منهج شيخ الاسلام</td>
+                            <td>
+                                <div><span>حذف</span> <ion-icon name="trash-outline"></ion-icon></div>
+                                <div><span>تعديل</span> <ion-icon name="create-outline"></ion-icon></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sec" id="sec_upload_post">
+                <form>
+                    <span class="title_sec">غلاف المقالة</span>
+                    <input class="cover" type="file" required>
+                    <input type="text" required placeholder="اسم المقالة">
+                    <input type="text" required placeholder="اسم الكاتب">
+                    <select name="divide" id="divide">
+                        <option selected>اختار تصنيف المقالة</option>
+                        <option value="1"> دينى</option>
+                        <option value="2"> علمى</option>
+                        <option value="3"> تاريخى</option>
+                    </select>
+                    <textarea required placeholder="اكتب وصف المقالة..."></textarea>
+                    <button type="submit">نشر المقالة</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم المقالة</th>
+                            <th>الاعدادات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>أسماء علم العقيدة عند المدرسة الكلامية</td>
+                            <td>
+                                <div><span>حذف</span> <ion-icon name="trash-outline"></ion-icon></div>
+                                <div><span>تعديل</span> <ion-icon name="create-outline"></ion-icon></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sec" id="sec_upload_video">
+                <form>
+                    <span class="title_sec">غلاف الفديو</span>
+                    <input class="cover" type="file" required>
+                    <input type="url" required placeholder="رابط الفديو">
+                    <input type="text" required placeholder="اسم الشيخ">
+                    <input type="text" required placeholder="اسم الفديو">
+                    <select name="divide" id="divide">
+                        <option selected>اختار تصنيف الفديو</option>
+                        <option value="1"> دينى</option>
+                        <option value="2"> علمى</option>
+                        <option value="3"> تاريخى</option>
+                    </select>
+                    <button type="submit">نشر الفديو</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم الفديو</th>
+                            <th>الاعدادات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>هل تطويل الشعر حرام ؟</td>
+                            <td>
+                                <div><span>حذف</span> <ion-icon name="trash-outline"></ion-icon></div>
+                                <div><span>تعديل</span> <ion-icon name="create-outline"></ion-icon></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sec" id="sec_upload_fatwas">
+                <form>
+                    <input type="text" required placeholder="اسم الفتوه">
+                    <input type="text" required placeholder="سؤال الفتوه">
+                    <input type="text" required placeholder="اجابة الفتوه">
+                    <select name="divide" id="divide">
+                        <option selected>اختار تصنيف الفتوه</option>
+                        <option value="1"> دينى</option>
+                        <option value="2"> علمى</option>
+                        <option value="3"> تاريخى</option>
+                    </select>
+                    <button type="submit">نشر الفتوه</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم الفتوه</th>
+                            <th>الاعدادات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>تطويل الركعة الثانية على الأولى خلاف السنة</td>
+                            <td>
+                                <div><span>حذف</span> <ion-icon name="trash-outline"></ion-icon></div>
+                                <div><span>تعديل</span> <ion-icon name="create-outline"></ion-icon></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sec" id="sec_users">
+                <form className="add_user" action="">
+                    <input type="text" placeholder="الاسم" required />
+                    <input type="email" placeholder="البريد الالكترونى" required />
+                    <select name="" id="">
+                        <option value="1">ادمن</option>
+                        <option value="1">عضو</option>
+                    </select>
+                    <button type="submit">اضافه مستخدم</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>الاسم</th>
+                            <th>الاميل</th>
+                            <th>الصلاحيات</th>
+                            <th>الاعدادات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mahmoud Abd Elkarim</td>
+                            <td>mahmoud@google.com</td>
+                            <td>ادمن</td>
+                            <td>
+                                <div><span>حذف</span> <ion-icon name="trash-outline"></ion-icon></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(".btn").click(function () {
+            $(this).addClass("active_link").siblings().removeClass("active_link");
+        });
+
+        let RightSide = document.getElementById("RightSide");
+        let sec_upload_book = document.getElementById("sec_upload_book");
+        let sec_upload_post = document.getElementById("sec_upload_post");
+        let sec_upload_video = document.getElementById("sec_upload_video");
+        let sec_upload_fatwas = document.getElementById("sec_upload_fatwas");
+        let sec_users = document.getElementById("sec_users");
+
+        function book() {
+            sec_upload_book.style.display = "flex";
+            sec_upload_post.style.display = "none";
+            sec_upload_video.style.display = "none";
+            sec_upload_fatwas.style.display = "none";
+            sec_users.style.display = "none";
+        }
+
+        function post() {
+            sec_upload_book.style.display = "none";
+            sec_upload_post.style.display = "flex";
+            sec_upload_video.style.display = "none";
+            sec_upload_fatwas.style.display = "none";
+            sec_users.style.display = "none";
+        }
+
+        function video() {
+            sec_upload_book.style.display = "none";
+            sec_upload_post.style.display = "none";
+            sec_upload_video.style.display = "flex";
+            sec_upload_fatwas.style.display = "none";
+            sec_users.style.display = "none";
+        }
+
+        function fatwas() {
+            sec_upload_post.style.display = "none";
+            sec_upload_book.style.display = "none";
+            sec_upload_video.style.display = "none";
+            sec_upload_fatwas.style.display = "flex";
+            sec_users.style.display = "none";
+        }
+
+        function users() {
+            sec_upload_post.style.display = "none";
+            sec_upload_book.style.display = "none";
+            sec_upload_video.style.display = "none";
+            sec_upload_fatwas.style.display = "none";
+            sec_users.style.display = "flex";
+        }
+    </script>
+
+
+</body>
+
+</html>

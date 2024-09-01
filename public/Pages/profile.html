@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ather | الملف الشخصى</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/img/logo.png">
+
+</head>
+
+<body>
+    <div class="header">
+        @include('navbar') <!-- إدراج الشريط العلوي الموحد -->
+    </div>
+            <div class="action">
+                <!-- Show Notifications if login person -->
+                <div onclick="notifications()" class="div notifications" id="notifications">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+                <div class="dropdown_notifications" id="dropdown_notifications">
+                    <div>تم الموافقه على نشر كتابك</div>
+                    <div>تم نشر كتاب جديد على</div>
+                </div>
+
+                <!--  -->
+                <div class="icon_side">
+                    <ion-icon id="menu" name="menu"></ion-icon>
+                    <ion-icon id="close" name="close"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contaner_profile">
+        <div class="profile">
+            <div class="head">
+                <a class="post_book" href="post_book.html">نشر كتاب</a>
+                <a class="log-out" href="../Backend/login.html">تسجيل الخروج</a>
+            </div>
+
+            <div class="profile_me">
+                <div class="cover">
+                    <input type="file" style="display: none;" id="profile">
+                    <label for="profile"><img src="../assets/img/profile.jpg"></label>
+                </div>
+                <div class="name">
+                    <span>اثر</span>
+                    <ion-icon name="create-outline"></ion-icon>
+                </div>
+                <p>قارئ وليس مؤلف كتب</p>
+            </div>
+
+            <div class="reat">
+                <div class="itme_box">
+                    <h3>رتبة اليوم / كل الأيام</h3>
+
+                    <div class="box">
+                        <div class="div_1">
+                            <ion-icon id="up" name="arrow-up-outline"></ion-icon>
+                            <span>7,157,741</span>
+                        </div>
+
+                        <div class="div_2">
+                            <ion-icon id="down" name="arrow-down-outline"></ion-icon>
+                            <span>8,919,441</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="me_post">
+            <img src="https://www.noor-book.com/publice/images/stack-of-books.svg" alt="">
+
+            <p>لا يوجد كتب منشوره حتى الان ,
+                <a href="post_book.html">انشر كتاب</a>
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <p>Copyright © <span>Mohamed Mahmoud and اثر</span></p>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
